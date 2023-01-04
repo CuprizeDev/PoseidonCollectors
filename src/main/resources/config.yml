@@ -1,0 +1,9 @@
+collector-item:
+  name: '&b&lChunk Collector'
+  lore:
+    - " "
+    - "&7This item collects item in the chunk it"
+    - "&7is placed in!"
+    - " "
+    - "&b&lRIGHT CLICK &bto place this collector in a chunk!"
+  enchanted: true

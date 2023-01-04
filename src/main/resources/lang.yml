@@ -1,0 +1,14 @@
+messages:
+  invalid-arg: '&8[&b&l!&8] &c/collector help'
+  help:
+    - "&8&m-------------&8(&b Poseidon Collectors &8)&8&m-------------"
+    - "&8* &c/collector give <player> <amount>"
+    - "&8* &c/collector help"
+    - "&8* &c/collector reload"
+  no-permission: '&8[&b&l!&8] &cYou do not have permission to run that command!'
+  only-players: '&8[&b&l!&8] &cOnly players can run this command!'
+  reloaded: '&8[&b&l!&8] &aYou have reloaded the plugin!'
+  invalid-number: '&8[&b&l!&8] &cThat is a invalid number!'
+  offline: '&8[&b&l!&8] &cThis player is offline!'
+  given-collector: '&8[&b&l!&8] &aYou have been given a collector!'
+  gave-collector: '&8[&b&l!&8] &aYou have given a collector to &b%player%&a!'

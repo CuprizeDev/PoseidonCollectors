@@ -1,0 +1,10 @@
+name: PoseidonCollectors
+version: '${project.version}'
+main: me.cuprize.collectors.Collectors
+depend: [ Vault ]
+softdepend: [ PoseidonBoosters ]
+authors: [ Cuprize ]
+description: Chunk collectors!
+commands:
+  collector:
+    aliases: [cc, chunkcollector, c]
