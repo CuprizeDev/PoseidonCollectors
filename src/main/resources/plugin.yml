@@ -1,10 +1,11 @@
 name: PoseidonCollectors
-version: '${project.version}'
+version: '0.1.1'
 main: me.cuprize.collectors.Collectors
-depend: [ Vault ]
-softdepend: [ PoseidonBoosters ]
+depend: [ Vault, NBTAPI ]
+softdepend: [ Factions, SuperiorSkyblock2, ShopGUIPlus ]
 authors: [ Cuprize ]
 description: Chunk collectors!
+api-version: 1.17
 commands:
   collector:
     aliases: [cc, chunkcollector, c]

@@ -1,16 +1,16 @@
 package me.cuprize.collectors.listeners;
 
+import de.tr7zw.nbtapi.NBTItem;
 import me.cuprize.collectors.Collectors;
+import me.cuprize.collectors.objects.Collector;
+import me.cuprize.collectors.files.CollectorsManager;
+import me.cuprize.collectors.files.LangManager;
 import me.cuprize.collectors.util.Chat;
-import org.bukkit.Chunk;
-import org.bukkit.ChunkSnapshot;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
-
-import java.util.HashMap;
-import java.util.UUID;
 
 public class BlockPlaceListener implements Listener {
 
@@ -19,17 +19,24 @@ public class BlockPlaceListener implements Listener {
         this.plugin = plugin;
     }
 
-
     @EventHandler
     public void onPlace(BlockPlaceEvent e) {
 
-        HashMap<UUID, Chunk> chunks = new HashMap<>();
+        CollectorsManager collectorsManager = new CollectorsManager(this.plugin);
 
         Player p = e.getPlayer();
-        Chunk chunk = e.getBlock().getLocation().getChunk();
+        Location location = e.getBlock().getLocation();
+        NBTItem nbtItem = new NBTItem(e.getItemInHand());
+        Collector collector = new Collector(e.getPlayer().getUniqueId(), location);
 
-        chunks.put(p.getUniqueId(), chunk);
-        p.sendMessage(Chat.color("Chunk: " + chunks.get(p.getUniqueId())));
-
+        if (nbtItem.getBoolean("collector")) {
+            if (collectorsManager.isChunkTaken(location.getChunk())) {
+                p.sendMessage(Chat.color(LangManager.getString("messages.chunk-used")));
+                e.setCancelled(true);
+            } else {
+                p.sendMessage(Chat.color(LangManager.getString("messages.collector-placed")));
+                collectorsManager.addCollector(collector);
+            }
+        }
     }
 }

@@ -6,4 +6,315 @@ collector-item:
     - "&7is placed in!"
     - " "
     - "&b&lRIGHT CLICK &bto place this collector in a chunk!"
-  enchanted: true
+  force-glow: true
+hologram:
+  - "&b&lCollector"
+  - ""
+  - "&bItems Collected: &e%amount%"
+  - "&bMoney Collected: &e%money-amount%"
+settings:
+  factions-hook: true
+  superior-skyblock-hook: false
+  shop-gui-plus-hook: true
+menu:
+  menu-name: '&8Collectors Menu'
+  size: 54
+  close:
+    name: '&c&lCLOSE'
+    slot: 49
+    material: BARRIER
+  sell-all:
+    name: '&a&lSELL ALL &7($%money-amount%)'
+    slot: 40
+    lore:
+      - ""
+      - "&7Items Collected: &a%items-collected%"
+      - "&7Money Collected: &a$%money-collected%"
+      - ""
+      - "&a&lRIGHT CLICK &ato sell all collected items!"
+    material: CHEST
+  crops:
+    CACTUS:
+      name: '&b&lCACTUS &7($%money-amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - "&7Money Collected: &b$%money-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto sell all collected items!"
+      sell-price: 15.0
+      force-glow: false
+      slot: 31
+    WHEAT:
+      name: '&b&lWHEAT &7($%money-amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - "&7Money Collected: &b$%money-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto sell all collected items!"
+      sell-price: 15.0
+      force-glow: false
+      slot: 30
+    NETHER_WART:
+      name: '&b&lNETHER WART &7($%money-amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - "&7Money Collected: &b$%money-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto sell all collected items!"
+      sell-price: 15.0
+      force-glow: false
+      slot: 29
+    CARROT:
+      name: '&b&lCARROT &7($%money-amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - "&7Money Collected: &b$%money-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto sell all collected items!"
+      sell-price: 15.0
+      force-glow: false
+      slot: 32
+    POTATO:
+      name: '&b&lPOTATO &7($%money-amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - "&7Money Collected: &b$%money-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto sell all collected items!"
+      sell-price: 15.0
+      force-glow: false
+      slot: 33
+  mob-drops:
+    IRON_INGOT:
+      name: '&b&lIron Ingot &7($%money-amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - "&7Money Collected: &b$%money-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto sell all collected items!"
+      sell-price: 15.0
+      force-glow: false
+      slot: 20
+    EMERALD:
+      name: '&b&lEmerald &7($%money-amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - "&7Money Collected: &b$%money-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto sell all collected items!"
+      sell-price: 15.0
+      force-glow: false
+      slot: 21
+    TNT:
+      name: '&b&lTNT &7(%amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto deposit tnt into your faction tnt bank!"
+      force-glow: false
+      slot: 22
+    ARROW:
+      name: '&b&lArrow &7($%money-amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - "&7Money Collected: &b$%money-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto sell all collected items!"
+      sell-price: 15.0
+      force-glow: false
+      slot: 23
+    ENDER_PEARL:
+      name: '&b&lEnder Pearl &7($%money-amount%)'
+      lore:
+        - ""
+        - "&7Items Collected: &b%items-collected%"
+        - "&7Money Collected: &b$%money-collected%"
+        - ""
+        - "&b&lRIGHT CLICK &bto sell all collected items!"
+      sell-price: 15.0
+      force-glow: false
+      slot: 24
+  fillers:
+    0:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 0
+    1:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 1
+    2:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 2
+    3:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 3
+    4:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 4
+    5:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 5
+    6:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 6
+    7:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 7
+    8:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 8
+    9:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 9
+    10:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 10
+    11:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 16
+    12:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 17
+    13:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 18
+    14:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 26
+    15:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 27
+    16:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 35
+    17:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 36
+    18:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 37
+    19:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 43
+    20:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 44
+    21:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 45
+    22:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 46
+    23:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 47
+    24:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 48
+    25:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 50
+    26:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 51
+    27:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 52
+    28:
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        force-glow: true
+      name: ' '
+      slot: 53
